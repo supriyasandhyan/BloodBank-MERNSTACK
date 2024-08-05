@@ -1,6 +1,6 @@
 const testController = (req, res) =>{
     res.status(200).send({
-        message: "test route",
+        message: "welcome to the test route",
         success: true,
     });
 };
