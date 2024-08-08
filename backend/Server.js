@@ -20,7 +20,9 @@ app.use(cors());
 app.use(morgan("dev"));
 
 //route
-app.use(`/api/v1/test`, require('./routes/testRoutes.js'))
+app.use("/api/v1/test", require('./routes/testRoutes.js'))
+app.use("/api/v1/auth", require('./routes/authRoutes.js'))
+app.use("/api/v1/inventory", require("./routes/inventoryRoutes.js"))
 
 //port
 const PORT = process.env.PORT || 8080;
